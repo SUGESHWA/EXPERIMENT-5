@@ -1,17 +1,29 @@
-## Experiment 5: Zero-Knowledge Proof (ZK) Private Voting System
-## Aim:
+# Experiment 5: Zero-Knowledge Proof (ZK) Private Voting System
+### NAME: SUGESHWA S
+### REG NO: 212224230277
+
+# Aim:
 To implement a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs). This ensures that votes are counted fairly without revealing who voted for whom.
 
-## Algorithm:
-Step 1: Voter Registration Each voter generates a secret vote key and submits a commitment (hashed vote) to the contract.
+# Algorithm:
+Step 1: Voter Registration
+Each voter generates a secret vote key and submits a commitment (hashed vote) to the contract.
 
-Step 2: Voting Process Voters submit their votes privately using a hash, without revealing their choice.
 
-Step 3: ZK Verification The contract verifies if a vote belongs to a registered voter but does not reveal the actual vote.
+Step 2: Voting Process
+Voters submit their votes privately using a hash, without revealing their choice.
 
-Step 4: Vote Counting Once voting ends, the contract reveals the final tally without linking votes to individuals.
 
-## Program:
+Step 3: ZK Verification
+The contract verifies if a vote belongs to a registered voter but does not reveal the actual vote.
+
+
+Step 4: Vote Counting
+Once voting ends, the contract reveals the final tally without linking votes to individuals.
+
+
+
+# Program:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -47,22 +59,28 @@ contract ZKVoting {
 }
 
 ```
-## Expected Output:
+# Expected Output:
 Voters commit their votes privately.
+<img width="1920" height="1080" alt="Screenshot 2025-10-23 091510" src="https://github.com/user-attachments/assets/314e4bad-a3ff-4c0b-a9b7-8b7c15987917" />
+
 
 When revealed, the contract verifies correctness but keeps votes anonymous.
 
-Final result is publicly verifiable without exposing individual votes.
+<img width="1920" height="1080" alt="Screenshot 2025-10-23 091520" src="https://github.com/user-attachments/assets/054f138b-d27c-4569-8566-4dd684d9c72d" />
 
-## High-Level Overview:
+Final result is publicly verifiable without exposing individual votes.
+<img width="1920" height="1080" alt="Screenshot 2025-10-23 091532" src="https://github.com/user-attachments/assets/a36d6edb-f431-42e9-b6eb-985251b9cfdb" />
+
+
+
+# High-Level Overview:
 Uses ZKPs to ensure anonymous and fair elections.
+
 
 Prevents vote tampering while maintaining voter privacy.
 
+
 Mimics real-world ZK voting applications in governance and DAOs.
 
-## Output:
-<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/4ba3063f-0861-476e-a036-a6ef5cc14999" />
-
-## RESULT:
-Thus a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs) is deployed and output is verified.
+# RESULT: 
+Thus a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs) is executed successfully.
